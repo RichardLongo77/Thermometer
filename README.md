@@ -26,7 +26,7 @@ void loop()
   while(1) 
   { 
     z=analogRead(0);//Read temperature on Analog 0 
-    if(z>30&&z<35)//if the temperature is between 20-30 
+    if(z>30&&z<35)//if the temperature is between 20-23 
     {       
         unsigned char j; 
         digitalWrite(c,LOW);//Set C Segment to low which lights this segment 
@@ -35,7 +35,7 @@ void loop()
         digitalWrite(j,HIGH); 
         digitalWrite(dp,HIGH);//Turn off DP segment (the little dot on the right down part) 
     } 
-    else if(z>=35&&z<40)//if the temperature is between 30~40 
+    else if(z>=35&&z<40)//if the temperature is between 23~25 
     { 
         unsigned char j; 
         digitalWrite(b,LOW); 
@@ -46,7 +46,7 @@ void loop()
         digitalWrite(c,HIGH); 
         digitalWrite(f,HIGH); 
     } 
-    else if(z>=40&&z<45)//if the temperature is between 30~40 
+    else if(z>=40&&z<45)//if the temperature is between 25~28 
     { 
         unsigned char j; 
         digitalWrite(g,LOW); 
@@ -57,7 +57,7 @@ void loop()
         digitalWrite(f,HIGH); 
         digitalWrite(e,HIGH); 
     } 
-    else if(z>=45&&z<50)//if the temperature is between 30~40 
+    else if(z>=45&&z<50)//if the temperature is between 28~30 
     { 
         digitalWrite(c,LOW); 
         digitalWrite(b,LOW); 
@@ -68,7 +68,7 @@ void loop()
         digitalWrite(e,HIGH); 
         digitalWrite(d,HIGH);    
     } 
-    else if(z>=50&&z<55)//if the temperature is between 30~40 
+    else if(z>=50&&z<55)//if the temperature is between 30~33 
     { 
         unsigned char j; 
         for(j=7;j<=9;j++) 
@@ -79,7 +79,7 @@ void loop()
         digitalWrite(b,HIGH); 
         digitalWrite(e,HIGH);   
     } 
-    else if(z>=55&&z<60)//if the temperature is between 30~40 
+    else if(z>=55&&z<60)//if the temperature is between 33~35 
     { 
         unsigned char j; 
         for(j=7;j<=11;j++) 
@@ -88,7 +88,7 @@ void loop()
         digitalWrite(dp,HIGH); 
         digitalWrite(b,HIGH);    
     } 
-    else if(z>=60&&z<65)//if the temperature is between 30~40 
+    else if(z>=60&&z<65)//if the temperature is between 35-48 
     { 
         unsigned char j; 
         for(j=5;j<=7;j++) 
@@ -97,7 +97,7 @@ void loop()
         for(j=8;j<=11;j++) 
         digitalWrite(j,HIGH); 
     } 
-    else if(z>=65&&z<70)//if the temperature is between 30~40 
+    else if(z>=65&&z<70)//if the temperature is between 38-40 
     { 
         unsigned char j; 
         for(j=5;j<=11;j++)     
